@@ -1,4 +1,4 @@
-# githubtestfatma
+# Fatma with qiime2
 # impoting data to qiime2
 qiime tools import \
   --type 'SampleData[SequencesWithQuality]' \
