@@ -34,6 +34,12 @@ mv fastqc_summary.txt ../
 cd ..
 
 
+Quality Score Encoding
+In FASTQ files, quality scores are encoded into a compact form, which uses only 1 byte per quality value. In this encoding, the quality score is represented as the character with an ASCII code equal to its value + 33. The following table demonstrates the relationship between the encoding character, its ASCII code, and the quality score represented.
+
+https://support.illumina.com/help/BaseSpace_OLH_009008/Content/Source/Informatics/BS/QualityScoreEncoding_swBS.html
+
+
 #Qiime2 Analysis
 
 #Prepare manifest and Import your data into Qiime2 Artifacts.
