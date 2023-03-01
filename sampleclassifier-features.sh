@@ -76,6 +76,7 @@ qiime sample-classifier heatmap \
   --o-filtered-table important-bacteria-feature-table-top-20.qza \
   --o-heatmap important-bacteria-feature-heatmap.qzv
 
+#visualize
 qiime metadata tabulate \
   --m-input-file important-bacteria-feature-table-top-20.qza \
   --o-visualization important-bacteria-feature-table-top-20.qzv
