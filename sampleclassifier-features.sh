@@ -56,6 +56,18 @@ qiime sample-classifier classify-samples \
   --p-n-estimators 20 \
   --p-random-state 123 \
   --output-dir sample-classifier-bacteria-OTU11-results
+  
+  qiime sample-classifier classify-samples \
+  --i-table bacteria-OTU-table.qza \
+  --m-metadata-file sample-metadata.tsv \
+  --m-metadata-column Counties \
+  --p-cv 3 \
+  --p-no-optimize-feature-selection \
+  --p-parameter-tuning \
+  --p-estimator RandomForestClassifier \
+  --p-n-estimators 20 \
+  --p-random-state 123 \
+  --output-dir sample-classifier-bacteria-OTU12-results
 
 qiime metadata tabulate \
   --m-input-file feature_importance.qza \
